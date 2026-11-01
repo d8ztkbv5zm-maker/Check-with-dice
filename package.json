@@ -1,0 +1,12 @@
+{
+  "name": "check-with-dice",
+  "version": "1.0.0",
+  "description": "Bot arena for Check with Dice — chess where three dice decide which pieces may move",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test tests/rules.test.mjs",
+    "smoke": "node arena/run.mjs --a random --b random --games 20 --out smoke && node tools/verify.mjs results/smoke"
+  }
+}
